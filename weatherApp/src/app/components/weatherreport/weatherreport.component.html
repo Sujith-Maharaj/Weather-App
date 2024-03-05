@@ -1,0 +1,27 @@
+<div class="color3">
+<mat-toolbar color="primary">
+  My Weather App
+</mat-toolbar>
+
+<div class="maindiv pagecontent margin">
+
+<mat-card class="mat-elevation-z5 col" *ngIf="data$ | async as data">
+    <mat-card-header class="margin2">
+      <mat-card-title class="font">{{data.name}}'s weather</mat-card-title>
+      <mat-card-subtitle class="font2">Today: {{today | date }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="flex-row">
+        <div class="temp">
+          <span class="big-text">{{data.main.temp | number:'0.0-0'}}°C</span>
+          <span class="margin1">Feels like </span>
+          <span>{{data.main.feels_like | number: '0.0-0'}} C</span>
+        </div>
+        <div class="outlook">
+          <span>{{data.weather[0].description | titlecase}}</span>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+</div></div>

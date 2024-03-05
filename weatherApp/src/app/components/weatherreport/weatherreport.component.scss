@@ -1,0 +1,94 @@
+.maindiv {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.col{
+  background-color: rgb(225, 233, 244);
+}
+.color3{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: rgba(163, 171, 205, 0.602);
+}
+.font{
+  font-size: 30px;
+  padding: 5px;
+}
+.font2{
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 5px;
+}
+.margin2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.margin{
+  margin-top: 100px;
+}
+
+.top-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+mat-card {
+  width: 500px;
+}
+
+mat-card::ng-deep.mat-card-header-text {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.margin1{
+  margin-top: 15px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+
+  > div {
+    flex: 50%;
+    border-radius: 10px
+  }
+
+  > .outlook {
+    padding: 2 0px;
+    color: black;
+    background: rgba(0, 0, 0, 0.158);
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  > .temp {
+    background: rgb(186, 228, 241);
+    padding: 30px;
+    color: black;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .big-text {
+    font-size: 40px;
+  }
+
+  .caption {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  .image {
+    height: 80px;
+  }
+}
